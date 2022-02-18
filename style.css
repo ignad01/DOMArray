@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    margin-top: 20px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    border-right: 1px solid #fff;
+    padding-top: 40px;
+}
+
+button{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 250px;
+    text-transform: uppercase;
+    background-color: rgb(8, 252, 252);
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #fff;
+}
+
+#main{
+    margin-left: 20px;
+}
+
+ #main h2 {
+     display: flex;
+     justify-content: space-between;
+     width: 30vw;
+    border-bottom: 1px solid #fff;
+    font-weight: 400;
+ }
+
+ .person{
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    margin: 10px 0;
+    padding-top: 10px;
+    font-size: 1.3em;
+    font-weight: 400;
+ }
+
+ .total{
+     margin-top: 10px;
+     border-top: 1px solid #fff;
+ }
+
+ @media (max-width: 950px){
+     #main h2{
+         width: 40vw;
+     }
+     .person{
+         width: 40vw;
+     }
+ }
+
+ @media (max-width: 730px){
+     .container{
+         flex-direction: column;
+     }
+     
+     aside{
+         flex-direction: row;
+         flex-wrap: wrap;
+         border: none;
+         justify-content: space-around;
+     }
+
+     button{
+         width: 130px;
+         vertical-align: center;
+         font-size: 12px;
+         padding: 5px;
+     }
+
+     #main h2{
+        width: 80vw;
+    }
+    .person{
+        width: 80vw;
+    }
+ }
